@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+body{
+  margin: 0;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E8E2D1;
+}

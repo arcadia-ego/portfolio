@@ -1,0 +1,52 @@
+.header {
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+}
+
+.headerText {
+  align-self: center;
+}
+.headerText:hover {
+  cursor: pointer;
+}
+
+.socialLinkList {
+  display:flex;
+}
+
+.socialLink{
+  margin: 20px auto;
+  color: black;
+}
+
+.styledGatsbyLink {
+  text-decoration: none;
+  margin: 30px;
+  color: black;
+}
+
+.internalHeaderLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.ribbon {
+  padding: 15px;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  background: orange;
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+
+  color: #dddeda;
+  /* letter-spacing: 0.07em; */
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  /* max-width: 600px; */
+  align-self: center;
+}
