@@ -9,6 +9,7 @@ import Anime from 'react-anime'
 import './header.css'
 
 library.add(fab)
+
 const Header = ({ siteTitle, arbitrary }) => (
   <div className="header">
     <h1 onClick={() => navigate('/')} className="headerText">
@@ -18,7 +19,10 @@ const Header = ({ siteTitle, arbitrary }) => (
       <a className="socialLink" href="https://github.com/arcadia-ego">
         <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
       </a>
-      <a className="socialLink" href="https://www.linkedin.com/in/harrison-crawford/">
+      <a
+        className="socialLink"
+        href="https://www.linkedin.com/in/harrison-crawford/"
+      >
         <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
       </a>
     </div>
@@ -28,6 +32,7 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
+          textDecoration: 'underline',
         }}
         to={'/about/'}
       >
@@ -38,6 +43,7 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
+          textDecoration: 'underline',
         }}
         to={'/blog/'}
       >
@@ -48,6 +54,7 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
+          textDecoration: 'underline',
         }}
         to={'/contact/'}
       >
@@ -58,6 +65,54 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
+          textDecoration: 'underline',
+        }}
+        to={'/projects/'}
+      >
+        Projects
+      </Link>
+    </h1>
+
+    <h1 className="ribbonPhone">
+      <Link
+        className="styledGatsbyLink"
+        activeStyle={{
+          margin: '30px',
+          color: 'black',
+          textDecoration: 'underline',
+        }}
+        to={'/about/'}
+      >
+        About
+      </Link>
+      <Link
+        className="styledGatsbyLink"
+        activeStyle={{
+          margin: '30px',
+          color: 'black',
+          textDecoration: 'underline',
+        }}
+        to={'/blog/'}
+      >
+        Blog
+      </Link>
+      <Link
+        className="styledGatsbyLink"
+        activeStyle={{
+          margin: '30px',
+          color: 'black',
+          textDecoration: 'underline',
+        }}
+        to={'/contact/'}
+      >
+        Contact
+      </Link>
+      <Link
+        className="styledGatsbyLink"
+        activeStyle={{
+          margin: '30px',
+          color: 'black',
+          textDecoration: 'underline',
         }}
         to={'/projects/'}
       >

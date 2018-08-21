@@ -1,0 +1,15 @@
+
+.blogContainer{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+
+
+.blogTitle {
+    font-size: 35px;
+}
+
+.blogDate {
+    font-size: 28px;
+    font-style: italic;
+}

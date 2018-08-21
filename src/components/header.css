@@ -2,7 +2,9 @@
   font-family: 'Libre Baskerville', serif;
   display: flex;
   flex-direction: column;
-  font-size: 28px;
+  width: 100%;
+  /* font-size: 28px; */
+  /* margin: 30px; */
 }
 
 .headerText {
@@ -14,6 +16,7 @@
 
 .socialLinkList {
   display:flex;
+  width: 100%;
 }
 
 .socialLink{
@@ -39,14 +42,38 @@
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   background: orange;
   clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
-
   color: #dddeda;
   /* letter-spacing: 0.07em; */
   font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px;
   /* max-width: 600px; */
   align-self: center;
+}
+
+.ribbonPhone{
+  display: none;
+}
+
+@media (max-width: 600px){
+  .ribbon{
+    display: none;
+  }
+  .ribbonPhone{
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    /* margin: 30px; */
+  }
+
+  .styledGatsbyLink {
+    width: 100%;
+    height: 50%;
+    margin: 5px;
+    padding: 10px;
+  }
 }

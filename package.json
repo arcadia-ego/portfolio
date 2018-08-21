@@ -13,6 +13,7 @@
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
     "react": "^16.4.2",
     "react-anime": "^2.1.0",
     "react-dom": "^16.4.2",

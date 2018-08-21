@@ -7,7 +7,7 @@ import './styles/index.css'
 const IndexPage = () => (
   <Layout>
     <h1>Hi, I'm Harrison!</h1>
-    <p>I'm a hobbyist programmer turned professional.</p>
+    <h3>I'm a hobbyist programmer turned professional.</h3>
     <p>Now go build something great.</p>
   </Layout>
 )

@@ -35,7 +35,7 @@ const Layout = ({ children, data }) => (
           siteTitle={data.site.siteMetadata.title}
           arbitrary={data.site.siteMetadata.arbitraryString}
         />
-        <Anime delay={(e, i) => i * 5} scale={[0.1, 0.9]}>
+        <Anime  scale={[0.1, 0.9]}>
           {children}
         </Anime>
       </div>
