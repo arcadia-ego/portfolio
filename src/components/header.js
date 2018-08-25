@@ -17,13 +17,13 @@ const Header = ({ siteTitle, arbitrary }) => (
     </h1>
     <div className="socialLinkList">
       <a className="socialLink" href="https://github.com/arcadia-ego">
-        <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+        <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
       </a>
       <a
         className="socialLink"
         href="https://www.linkedin.com/in/harrison-crawford/"
       >
-        <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
+        <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
       </a>
     </div>
     <h1 className="ribbon">

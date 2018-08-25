@@ -5,7 +5,7 @@ import './styles/index.css'
 
 const About = () => (
     <Layout>
-        <h1> About me.</h1>
+        <h1 className="about"> About me.</h1>
     </Layout>
 )
 

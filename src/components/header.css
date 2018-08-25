@@ -3,12 +3,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0 auto;
   /* font-size: 28px; */
   /* margin: 30px; */
 }
 
 .headerText {
-  align-self: center;
+ align-self: center;
+  font-size: 3.8rem;
 }
 .headerText:hover {
   cursor: pointer;
@@ -16,7 +18,8 @@
 
 .socialLinkList {
   display:flex;
-  width: 100%;
+  align-self: center;
+  width: 570px;
 }
 
 .socialLink{
@@ -61,19 +64,29 @@
     display: none;
   }
   .ribbonPhone{
-    display: flex;
-    flex-flow: row nowrap;
+    display: inline-flex;
+    flex-flow: row wrap;
     align-self: center;
     align-items: center;
-    font-size: 16px;
+    justify-content: center;
+    font-size: 24px;
     width: 100%;
     /* margin: 30px; */
   }
+  .socialLinkList {
+    width: 50%;
+    flex-direction: column;
+  }
 
   .styledGatsbyLink {
-    width: 100%;
-    height: 50%;
     margin: 5px;
     padding: 10px;
+  }
+}
+
+@media(max-width: 300px){
+  .headerText{
+    font-size: 2rem;
+    align-self: flex-end;
   }
 }
