@@ -2,10 +2,8 @@ import React from 'react'
 import { Link, navigate } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faPoop } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-import Anime from 'react-anime'
 import './header.css'
 
 library.add(fab)
@@ -56,9 +54,9 @@ const Header = ({ siteTitle, arbitrary }) => (
           color: 'black',
           textDecoration: 'underline',
         }}
-        to={'/contact/'}
+        to={'/projects/'}
       >
-        Contact
+        Projects
       </Link>
       <Link
         className="styledGatsbyLink"
@@ -67,9 +65,9 @@ const Header = ({ siteTitle, arbitrary }) => (
           color: 'black',
           textDecoration: 'underline',
         }}
-        to={'/projects/'}
+        to={'/contact/'}
       >
-        Projects
+        Contact
       </Link>
     </h1>
 
@@ -103,9 +101,9 @@ const Header = ({ siteTitle, arbitrary }) => (
           color: 'black',
           textDecoration: 'underline',
         }}
-        to={'/contact/'}
+        to={'/projects/'}
       >
-        Contact
+        Projects
       </Link>
       <Link
         className="styledGatsbyLink"
@@ -114,9 +112,9 @@ const Header = ({ siteTitle, arbitrary }) => (
           color: 'black',
           textDecoration: 'underline',
         }}
-        to={'/projects/'}
+        to={'/contact/'}
       >
-        Projects
+        Contact
       </Link>
     </h1>
   </div>
