@@ -35,9 +35,9 @@ const Layout = ({ children, data }) => (
           siteTitle={data.site.siteMetadata.title}
           arbitrary={data.site.siteMetadata.arbitraryString}
         />
-        <Anime  scale={[0.1, 0.9]}>
-          {children}
-        </Anime>
+        <div className="children">
+        {children}
+        </div>
       </div>
     )}
   />

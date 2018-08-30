@@ -12,7 +12,8 @@ export default ({ data }) => {
           <div key={node.id}>
             <Link className="styledGatsbyLink" to={node.fields.slug}>
               <h3 className="blogTitle">
-                {node.frontmatter.title} <br /><span className="blogDate">{node.frontmatter.date}</span>
+                {node.frontmatter.title} <br />
+                <span className="blogDate">{node.frontmatter.date}</span>
               </h3>
               <p>{node.excerpt}</p>
             </Link>
@@ -25,13 +26,17 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { type: { eq: "article" } } }
+    ) {
       totalCount
       edges {
         node {
           id
           frontmatter {
             title
+            type
             date(formatString: "DD MMMM, YYYY")
           }
           fields {

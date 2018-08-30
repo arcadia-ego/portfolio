@@ -58,17 +58,6 @@ const Header = ({ siteTitle, arbitrary }) => (
       >
         Projects
       </Link>
-      <Link
-        className="styledGatsbyLink"
-        activeStyle={{
-          margin: '30px',
-          color: 'black',
-          textDecoration: 'underline',
-        }}
-        to={'/contact/'}
-      >
-        Contact
-      </Link>
     </h1>
 
     <h1 className="ribbonPhone">
@@ -104,17 +93,6 @@ const Header = ({ siteTitle, arbitrary }) => (
         to={'/projects/'}
       >
         Projects
-      </Link>
-      <Link
-        className="styledGatsbyLink"
-        activeStyle={{
-          margin: '30px',
-          color: 'black',
-          textDecoration: 'underline',
-        }}
-        to={'/contact/'}
-      >
-        Contact
       </Link>
     </h1>
   </div>

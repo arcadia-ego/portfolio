@@ -1,0 +1,8 @@
+.projectContainer{
+    display: flex;
+}
+
+.projectCard{
+    max-width: 400px;
+}
+

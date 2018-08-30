@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 
-/* *{
-  border: 1px solid red;
-} */
-
-
-* {
-  box-sizing: border-box;
-}
-
-
 
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,6 +8,11 @@ body{
   height: 100vh;
   margin: 0px;
   background-color: #E8E2D1;
+  justify-content: center;
+}
+
+.children{
+  display: flex;
   justify-content: center;
 }
 
