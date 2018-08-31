@@ -30,7 +30,7 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
-          textDecoration: 'underline',
+          borderBottom:"2px solid black",
         }}
         to={'/about/'}
       >
@@ -41,18 +41,16 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
-          textDecoration: 'underline',
+          borderBottom:"2px solid black",
         }}
         to={'/blog/'}
-      >
-        Blog
-      </Link>
+      >Blog </Link>
       <Link
         className="styledGatsbyLink"
         activeStyle={{
           margin: '30px',
           color: 'black',
-          textDecoration: 'underline',
+          borderBottom:"2px solid black",
         }}
         to={'/projects/'}
       >
@@ -66,7 +64,8 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
-          textDecoration: 'underline',
+          borderBottom:"2px solid black",
+          paddingBottom: "0.3px",
         }}
         to={'/about/'}
       >
@@ -77,7 +76,8 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
-          textDecoration: 'underline',
+          borderBottom:"2px solid black",
+          paddingBottom: "0.3px",
         }}
         to={'/blog/'}
       >
@@ -88,7 +88,8 @@ const Header = ({ siteTitle, arbitrary }) => (
         activeStyle={{
           margin: '30px',
           color: 'black',
-          textDecoration: 'underline',
+          borderBottom:"2px solid black",
+          paddingBottom: "0.3px",
         }}
         to={'/projects/'}
       >

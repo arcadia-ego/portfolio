@@ -1,4 +1,37 @@
-.indexContainer{
-    display: flex;
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  width: 600px;
+  height: 600px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.projectCard:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 870px) {
+  .projectContainer {
     flex-direction: column;
+  }
+  .projectCard {
+    max-width: 300px;
+  }
 }
