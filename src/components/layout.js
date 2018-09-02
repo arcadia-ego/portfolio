@@ -35,9 +35,11 @@ const Layout = ({ children, data }) => (
           siteTitle={data.site.siteMetadata.title}
           arbitrary={data.site.siteMetadata.arbitraryString}
         />
+        {/* <Anime scale={[.1, .9]}> */}
         <div className="children">
         {children}
         </div>
+        {/* </Anime> */}
       </div>
     )}
   />

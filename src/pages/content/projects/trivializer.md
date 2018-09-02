@@ -4,6 +4,7 @@ date: "2018-08-26"
 type: "project"
 tech: ["Javascript", "React", "Redux", "MongoDB"]
 linkout: "https://www.trivializer.app/"
+source: "https://github.com/Lambda-School-Labs/CS8-trivializer"
 ---
 
 Trivializer is a trivia app that aggregates

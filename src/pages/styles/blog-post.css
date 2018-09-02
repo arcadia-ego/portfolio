@@ -1,13 +1,16 @@
 .blogContainer {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
+  justify-content: center;
+  align-self: center;
+  max-width: 800px;
 }
 
-.blogContents {
-  display: flex;
-}
+/* .blogContents {
+  width: 70%;
+} */
 @media (max-width: 550px) {
   .blogContents {
     justify-content: center;

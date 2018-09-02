@@ -1,12 +1,17 @@
 .indexContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .projectContainer {
   display: flex;
   justify-content: center;
-  margin: 5px;
+  margin: 50px;
+}
+
+.children{
+  justify-content: center;
 }
 
 .projectCard {
@@ -27,11 +32,24 @@
   transform: scale(1.1);
 }
 
+.projectCard a:nth-of-type(2){
+  color: black;
+  align-self: center;
+}
+.projectCard a:nth-of-type(2):hover{
+  transform: scale(1.1);
+}
+
 @media (max-width: 870px) {
   .projectContainer {
     flex-direction: column;
   }
-  .projectCard {
-    max-width: 300px;
+}
+@media(max-width:445px){
+  .projectCard a:first-of-type {
+    display:none;
+  }
+  .projectCard{
+    max-width: 150px;
   }
 }

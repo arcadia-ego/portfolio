@@ -9,7 +9,7 @@
 }
 
 .headerText {
- align-self: center;
+  align-self: center;
   font-size: 3.8rem;
 }
 .headerText:hover {
@@ -17,20 +17,34 @@
 }
 
 .socialLinkList {
-  display:flex;
+  display: flex;
   align-self: center;
   width: 570px;
 }
 
-.socialLink{
+.socialLink {
   margin: 20px auto;
   color: black;
+}
+
+.socialLink:hover {
+  transform: scale(1.1);
 }
 
 .styledGatsbyLink {
   text-decoration: none;
   margin: 30px;
   color: black;
+}
+
+.styledGatsbyLink:hover {
+  transform: scale(1.1);
+}
+
+.email {
+  align-self: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .internalHeaderLinks {
@@ -55,15 +69,15 @@
   align-self: center;
 }
 
-.ribbonPhone{
+.ribbonPhone {
   display: none;
 }
 
-@media (max-width: 600px){
-  .ribbon{
+@media (max-width: 600px) {
+  .ribbon {
     display: none;
   }
-  .ribbonPhone{
+  .ribbonPhone {
     display: inline-flex;
     flex-flow: row wrap;
     align-self: center;
@@ -84,9 +98,12 @@
   }
 }
 
-@media(max-width: 300px){
-  .headerText{
+@media (max-width: 300px) {
+  .headerText {
     font-size: 2rem;
     align-self: flex-end;
+  }
+  .email{
+    font-size: 15px;
   }
 }
