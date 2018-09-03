@@ -1,4 +1,6 @@
 import React from 'react'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
+import ReactTooltip from 'react-tooltip'
 import { Link, navigate } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -21,12 +23,12 @@ class Header extends React.Component {
   state = {
     icon: closed,
     flag: 'none',
+    copied: 'Click to copy!',
   }
 
   copyToClipboard = () => {
-    let copyText = document.getElementsByClassName('email')
-    console.log("copyText", copyText[0].textContent)
-    copyText[0].textContent.select()
+    let copyText = document.getElementById('email')
+    copyText.select()
     document.execCommand('copy')
   }
 
@@ -43,17 +45,23 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
+        <ReactTooltip
+          id="content"
+          getContent={() => {
+            return this.state.copied
+          }}
+        />
         <h1 onClick={() => navigate('/')} className="headerText">
           Harrison Crawford
         </h1>
         <div className="socialLinkList">
           {console.log('switch', icon)}
           <a className="socialLink" href="https://github.com/arcadia-ego">
-            <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
+            <FontAwesomeIcon icon={['fab', 'github-square']} size="3x" />
           </a>
 
           <div onClick={() => this.switchIcons()} className="socialLink">
-            <FontAwesomeIcon icon={this.state.icon} size="3x" />
+            <FontAwesomeIcon className="emailIcon" icon={this.state.icon} size="3x" />
           </div>
 
           <a
@@ -63,16 +71,24 @@ class Header extends React.Component {
             <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
           </a>
         </div>
-        <p className="email" style={{ display: this.state.flag }}>
+        <p id="email" style={{ display: this.state.flag }}>
           harrisoncrawf1@gmail.com{' '}
-          <span
-            onClick={this.copyToClipboard}
-            style={{ margin: '5px' }}
-            value="harrisoncrawf1@gmail.com"
+          <CopyToClipboard
+            text={'harrisoncrawf1@gmail.com'}
+            onCopy={() => this.setState({ copied: 'Copied to clipboard!' })}
           >
-            <FontAwesomeIcon icon={faClipboard} size="2x" />
-          </span>
+            <span style={{ margin: '5px' }}>
+              <FontAwesomeIcon
+                data-for="content"
+                data-tip
+                data-iscapture="true"
+                icon={faClipboard}
+                size="2x"
+              />
+            </span>
+          </CopyToClipboard>
         </p>
+
         <h1 className="ribbon">
           <Link
             onClick={window.scrollTo(0, 0)}

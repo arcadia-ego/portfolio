@@ -41,10 +41,18 @@
   transform: scale(1.1);
 }
 
-.email {
+#email {
   align-self: center;
   font-weight: bold;
   font-size: 20px;
+}
+
+.emailIcon {
+  cursor: pointer;
+}
+
+#email span {
+  cursor: pointer;
 }
 
 .internalHeaderLinks {
@@ -103,7 +111,7 @@
     font-size: 2rem;
     align-self: flex-end;
   }
-  .email{
+  #email {
     font-size: 15px;
   }
 }

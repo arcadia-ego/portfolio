@@ -13,7 +13,7 @@ library.add(fab)
 
 const imgLibrary = {
   Trivializer: Trivializer,
-  "spa Weather": spaWeather,
+  'spa Weather': spaWeather,
 }
 
 export default ({ data }) => {
@@ -36,9 +36,9 @@ export default ({ data }) => {
               <a href={node.frontmatter.source}>
                 <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
               </a>
-              <h1>{node.frontmatter.title}</h1>
+              <h1 style={{ alignSelf: 'center' }}>{node.frontmatter.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: node.html }} />
-              <div style={{fontWeight:"bold"}}> Key Tech: </div>
+              <div style={{ fontWeight: 'bold' }}> Key Tech: </div>
               {node.frontmatter.tech.map((item, index) => {
                 console.log('ITEM MAPPED', item)
                 return <div key={index}>{item}</div>

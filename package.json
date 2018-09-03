@@ -16,8 +16,10 @@
     "gatsby-transformer-remark": "^1.7.44",
     "react": "^16.4.2",
     "react-anime": "^2.1.0",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.4.2",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-tooltip": "^3.6.1"
   },
   "keywords": [
     "gatsby"
