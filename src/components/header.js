@@ -53,9 +53,8 @@ class Header extends React.Component {
         <div onClick={() => navigate('/')} className="headerText">
           Harrison Crawford
         </div>
-        <div className="headerSub">Web Dev || Writer</div>
+        <div className="headerSub"> Web Dev || Writer</div>
         <div className="socialLinkList">
-          {console.log('switch', icon)}
           <a className="socialLink" href="https://github.com/arcadia-ego">
             <FontAwesomeIcon icon={['fab', 'github-square']} size="3x" />
           </a>

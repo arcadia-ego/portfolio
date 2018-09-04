@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout>
     <div className="indexContainer">
       <h1>Hi, I'm Harrison!</h1>
-      <h3>I'm a hobbyist programmer turned professional.</h3>
+      <h3>I'm a full-stack developer </h3>
       <p>Now go build something great.</p>
     </div>
   </Layout>
