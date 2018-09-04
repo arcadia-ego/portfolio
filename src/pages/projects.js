@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import './styles/index.css'
 import Trivializer from './assets/trivializer.png'
@@ -17,8 +16,6 @@ const imgLibrary = {
 }
 
 export default ({ data }) => {
-  const post = data.allMarkdownRemark.edges
-  console.log('POST', post)
   return (
     <Layout>
       <div className="projectContainer">
@@ -30,10 +27,10 @@ export default ({ data }) => {
                 <img
                   src={imgLibrary[img]}
                   alt="Trivializer"
-                  style={{ width: '100%', height: '200px' }}
+                  style={{ width: '100%', height: '200px', borderRadius: '1%' }}
                 />
               </a>
-              <a style={{marginTop:"15px"}} href={node.frontmatter.source}>
+              <a style={{ marginTop: '15px' }} href={node.frontmatter.source}>
                 <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
               </a>
               <h1 style={{ alignSelf: 'center' }}>{node.frontmatter.title}</h1>
@@ -41,7 +38,6 @@ export default ({ data }) => {
               <div style={{ alignSelf: 'center' }}>
                 <div style={{ fontWeight: 'bold' }}> Key Tech: </div>
                 {node.frontmatter.tech.map((item, index) => {
-                  console.log('ITEM MAPPED', item)
                   return <div key={index}>{item}</div>
                 })}
               </div>

@@ -8,7 +8,6 @@ export default ({ data }) => {
     <Layout>
       <div className="blogContainer">
         <h1 className="blogTitle">{post.frontmatter.title}</h1>
-
         <div className="blogContents" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -16,7 +15,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug} }) {
       html
       frontmatter {

@@ -33,7 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
           console.log('NODE MARKDOWNREMARK', node.fields.slug)
           if (node.fields.slug.startsWith('/articles')) {
-            console.log("========CREATED BLOG PAGE==========");
+            console.log('========CREATED BLOG PAGE==========')
             createPage({
               path: node.fields.slug,
               component: path.resolve(`./src/pages/templates/blog-post.js`),
@@ -43,23 +43,11 @@ exports.createPages = ({ graphql, actions }) => {
                 slug: node.fields.slug,
               },
             })
-          } else if (node.fields.slug.startsWith('/projects')) {
-            console.log("=======CREATED PROJECT PAGE ==================");
-            createPage({
-              path: node.fields.slug,
-              component: path.resolve(`./src/pages/templates/project-post.js`),
-              context: {
-                // Data passed to context is available
-                // in page queries as GraphQL variables.
-                testId: "Project",
-                slug: node.fields.slug,
-              },
-            })
           }
         })
         resolve()
       })
-      .catch(reject => {
+      .catch(rejected => {
         console.log('REJECTED?', reject)
       })
   })

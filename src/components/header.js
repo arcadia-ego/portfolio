@@ -14,7 +14,6 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import './header.css'
 library.add(fab)
 
-let icon = faEnvelopeSquare
 let open = faEnvelopeOpen
 let closed = faEnvelopeSquare
 
@@ -53,7 +52,7 @@ class Header extends React.Component {
         <div onClick={() => navigate('/')} className="headerText">
           Harrison Crawford
         </div>
-        <div className="headerSub"> Web Dev || Writer</div>
+        <div className="headerSub">Web Dev || Writer</div>
         <div className="socialLinkList">
           <a className="socialLink" href="https://github.com/arcadia-ego">
             <FontAwesomeIcon icon={['fab', 'github-square']} size="3x" />
@@ -94,19 +93,6 @@ class Header extends React.Component {
 
         <h1 className="ribbon">
           <Link
-            onClick={window.scrollTo(0, 0)}
-            className="styledGatsbyLink"
-            activeStyle={{
-              margin: '30px',
-              color: 'black',
-              borderBottom: '2px solid black',
-            }}
-            to={'/about/'}
-          >
-            About
-          </Link>
-          <Link
-            onClick={window.scrollTo(0, 0)}
             className="styledGatsbyLink"
             activeStyle={{
               margin: '30px',
@@ -118,7 +104,6 @@ class Header extends React.Component {
             Blog{' '}
           </Link>
           <Link
-            onClick={window.scrollTo(0, 0)}
             className="styledGatsbyLink"
             activeStyle={{
               margin: '30px',
@@ -132,18 +117,6 @@ class Header extends React.Component {
         </h1>
 
         <h1 className="ribbonPhone">
-          <Link
-            className="styledGatsbyLink"
-            activeStyle={{
-              margin: '30px',
-              color: 'black',
-              borderBottom: '2px solid black',
-              paddingBottom: '0.3px',
-            }}
-            to={'/about/'}
-          >
-            About
-          </Link>
           <Link
             className="styledGatsbyLink"
             activeStyle={{

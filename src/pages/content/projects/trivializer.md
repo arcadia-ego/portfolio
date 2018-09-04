@@ -2,7 +2,7 @@
 title: Trivializer
 date: "2018-08-26"
 type: "project"
-tech: ["Javascript", "React", "Redux", "MongoDB"]
+tech: ["Javascript", "React", "Redux","Node", "MongoDB"]
 linkout: "https://www.trivializer.app/"
 source: "https://github.com/Lambda-School-Labs/CS8-trivializer"
 ---

@@ -27,7 +27,6 @@ const Layout = ({ children, data }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-          {console.log('DATA', data)}
           <html lang="en" />
         </Helmet>
         <Header
