@@ -33,16 +33,18 @@ export default ({ data }) => {
                   style={{ width: '100%', height: '200px' }}
                 />
               </a>
-              <a href={node.frontmatter.source}>
+              <a style={{marginTop:"15px"}} href={node.frontmatter.source}>
                 <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
               </a>
               <h1 style={{ alignSelf: 'center' }}>{node.frontmatter.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: node.html }} />
-              <div style={{ fontWeight: 'bold' }}> Key Tech: </div>
-              {node.frontmatter.tech.map((item, index) => {
-                console.log('ITEM MAPPED', item)
-                return <div key={index}>{item}</div>
-              })}
+              <div style={{ alignSelf: 'center' }}>
+                <div style={{ fontWeight: 'bold' }}> Key Tech: </div>
+                {node.frontmatter.tech.map((item, index) => {
+                  console.log('ITEM MAPPED', item)
+                  return <div key={index}>{item}</div>
+                })}
+              </div>
             </div>
           )
         })}

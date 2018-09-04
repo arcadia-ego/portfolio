@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import Anime from 'react-anime'
 
 import Header from './header'
 import './layout.css'
@@ -35,11 +34,10 @@ const Layout = ({ children, data }) => (
           siteTitle={data.site.siteMetadata.title}
           arbitrary={data.site.siteMetadata.arbitraryString}
         />
-        {/* <Anime scale={[.1, .9]}> */}
+        
         <div className="children">
         {children}
         </div>
-        {/* </Anime> */}
       </div>
     )}
   />

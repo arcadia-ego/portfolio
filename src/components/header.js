@@ -17,7 +17,6 @@ library.add(fab)
 let icon = faEnvelopeSquare
 let open = faEnvelopeOpen
 let closed = faEnvelopeSquare
-let flag = 'none'
 
 class Header extends React.Component {
   state = {
@@ -51,9 +50,10 @@ class Header extends React.Component {
             return this.state.copied
           }}
         />
-        <h1 onClick={() => navigate('/')} className="headerText">
+        <div onClick={() => navigate('/')} className="headerText">
           Harrison Crawford
-        </h1>
+        </div>
+        <div className="headerSub">Web Dev || Writer</div>
         <div className="socialLinkList">
           {console.log('switch', icon)}
           <a className="socialLink" href="https://github.com/arcadia-ego">
@@ -61,7 +61,11 @@ class Header extends React.Component {
           </a>
 
           <div onClick={() => this.switchIcons()} className="socialLink">
-            <FontAwesomeIcon className="emailIcon" icon={this.state.icon} size="3x" />
+            <FontAwesomeIcon
+              className="emailIcon"
+              icon={this.state.icon}
+              size="3x"
+            />
           </div>
 
           <a
