@@ -107,6 +107,9 @@
     width: 50%;
     flex-direction: column;
   }
+  .headerText{
+    font-size: 1.9rem;
+  }
   .headerSub {
     font-size: 1.5rem;
   }
@@ -117,9 +120,9 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 315px) {
   .headerText {
-    font-size: 2rem;
+    font-size: 1.8rem;
     align-self: flex-end;
   }
   #email {
